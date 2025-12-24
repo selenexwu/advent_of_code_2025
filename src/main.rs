@@ -14,7 +14,6 @@ fn main() {
         filename = Some(args[2].clone());
     }
 
-
     let days = [Day1::run, Day2::run];
     days[day_number - 1](filename, include_hard);
 }

@@ -14,12 +14,12 @@ impl Day for Day0 {
         todo!()
     }
 
-    fn solve_easy(input : Self::Input) -> i32 {
+    fn solve_easy(input : Self::Input) -> u64 {
         println!("{input:?}");
         todo!()
     }
 
-    // fn solve_hard(input : Self::Input) -> i32 {
+    // fn solve_hard(input : Self::Input) -> u64 {
     //     todo!()
     // }
 }
