@@ -1,6 +1,6 @@
 use std::env::args;
 
-use aoc_2025::{Day, day1::Day1, day2::Day2, day3::Day3};
+use aoc_2025::{Day, day1::Day1, day2::Day2, day3::Day3, day4::Day4};
 
 fn main() {
     let args : Vec<_> = args().skip(1).take(3).collect();
@@ -14,6 +14,6 @@ fn main() {
         filename = Some(args[2].clone());
     }
 
-    let days = [Day1::run, Day2::run, Day3::run];
+    let days = [Day1::run, Day2::run, Day3::run, Day4::run];
     days[day_number - 1](filename, include_hard);
 }
