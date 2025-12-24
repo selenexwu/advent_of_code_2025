@@ -3,12 +3,5 @@
 version = 4
 
 [[package]]
-name = "aoc-2025"
-version = "0.1.0"
-dependencies = [
- "parser-combinators",
-]
-
-[[package]]
 name = "parser-combinators"
 version = "0.1.0"
