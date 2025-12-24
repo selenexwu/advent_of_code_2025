@@ -41,6 +41,9 @@ where
 
 pub fn parse_all<'a, O, P : Parser<'a, char, O=O>>(parser : P, input : &'a [char]) -> O {
     let (res, rest) = parser.parse(input).expect("parse succeeds");
-    assert!(rest.is_empty(), "parse handles all input");
+    if !rest.is_empty() {
+        println!("{rest:?}");
+        panic!("parse should handle all input");
+    }
     res
 }
